@@ -117,7 +117,7 @@ def plot_Nyquist(z_example,labels,annotate=False,freq=read_freq()):
 
 
 def plot_Bode(z_example,stois,freq=read_freq()):
-    label = []
+    labels = []
     lg_freq = np.log10(freq)
     i=0
     fig,[ax1,ax2] = plt.subplots(2,1,figsize=(6, 6))
@@ -136,6 +136,6 @@ def plot_Bode(z_example,stois,freq=read_freq()):
     string_labels = [r"$10^{%2d}$" % i for i in np.arange(-2,6,1)]
     ax2.set_xticks(np.arange(-2,6,1))
     ax2.set_xlabel('log10(Freq [Hz])', fontsize=14)
-    ax1.legend(labels=lables,
+    ax1.legend(labels=labels,
                loc='upper right',markerscale=1.2,frameon=False, fontsize=10)
     ax1.set_xticks(np.arange(-2,6,1))
