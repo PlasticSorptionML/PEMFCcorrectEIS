@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = (11, 5)  #set default figure size
 import os
+import seaborn as sns
 
 __all__ = ['read_freq',
            'PEMFC_equivalent_circuits',
